@@ -8,7 +8,7 @@ data = [go.Heatmap(x=df['Day'],
 y=df['WeekofMonth'],
 z=df['Recovered'].values.tolist(),
 colorscale='Jet')]
-# Preparing layout
+# Preparing layout sepreate data into calendar layout with color intesties as the amount of casses
 layout = go.Layout(title='Corona Virus Recovered Cases', xaxis_title="Day of Week",
 yaxis_title="Week of Month")
 # Plot the figure and saving in a html file
