@@ -6,7 +6,7 @@ df = pd.read_csv('../Datasets/Weather2014-15.csv')
 # Preparing data
 data = [go.Heatmap(x=df['day'],
 y=df['month'],
-z=df['average_max_temp'].values.tolist(),
+z=df['record_max_temp'].values.tolist(),
 colorscale='Jet')]
 # Preparing layout sepreate data into calendar layout with color intesties as the amount of casses
 layout = go.Layout(title='Average Max Temperature', xaxis_title="Day of Week",
